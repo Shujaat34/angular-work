@@ -1,35 +1,10 @@
-<app-login></app-login>
-<app-signup></app-signup>
+<h1>Get TextField value in Angular</h1>
+<!-- Getting a value as we press the Key -->
+<p>Enter value </p><input type="text" #box (keyup)="getValueOnTextBox(box.value)"> 
+<h3>{{val1}}</h3>
 
-<h1>Events In Angular</h1>
-<!-- This is a Button Click Event -->
-<button (click) = "myEvent('This is Click Event')">Click Here</button>
+<!-- Getting  a value as we click the button -->
 
-<!-- This is a Press Any Key Event  -->
-<input type="text" #box (keyup)="myEvent(box.value)"/><br><br>
-
-<p>Press Enter</p>
-<!-- This is Press Enter Key Event-->
-<input type="text" #box1 (keyup.enter)="myEvent(box1.value)"/> <!--When we press Enter-->
-<br><br>
-<p>Press Space</p>
-<!-- This is When Press Space -->
-<input type="text" #box2 (keyup.space)="myEvent(box2.value)"/> <!--When we press Space-->
-
-<!-- <input type="text" #box11 (keydown.enter)="myEvent(box11.value)"/> It works same as a key pressed-->
-
-<br><br>
-<p>Press out of TextField</p>
-<!-- This is when Focus out the TextField -->
-<input type="text" #box3 (blur)="myEvent(box3.value)"/> <!--blur event when we focus out from the textfield-->
-
-<!-- This is when we hover the Mouse -->
-<div style="background-color: skyblue;" (mouseover)="myEvent('Mouse In')">
-Mouse Hover Event
-</div>
-<br><br>
-
-<!-- This is when we move out the Mouse -->
-<div style="background-color: brown; color: aliceblue;" (mouseleave)="myEvent('Mouse Leave')">
-  Mouse Leave Event
-  </div>
+<p>Enter value </p><input type="text" #box1>
+<button (click)="getValueOnButtonClick(box1.value)">Click here</button>
+<h3>{{val2}}</h3>

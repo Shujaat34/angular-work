@@ -8,7 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Blog';
-  myEvent(evt : string){
-    console.warn(evt);
+  val1 = "";
+  val2 = "";
+  getValueOnTextBox(str : string){
+    console.warn(str);
+    this.val1 = str;
   }
+
+  getValueOnButtonClick(str : string){
+    this.val2 = str;
+  }
+
+
 }
