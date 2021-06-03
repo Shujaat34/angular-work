@@ -1,4 +1,4 @@
-#Angular Commands
+# AngularCommands
 
 ng new myproject ==> To create Angular project
 
@@ -12,7 +12,7 @@ We can't do in Angular
 {{window.location.href}} ==> can't get url directly in html
 
 
-##What is component?
+## What is component?
 It is a piece of code which is reusable like we make a component for registration, a component for login
 a component for list rendering.
 A component is same as a function which is reusable. 
@@ -21,19 +21,19 @@ A componet has four files 1)compoenet.ts, 2)component.html, 3) component.css, 4)
 Example : We make a header component and a fotter component which we use through out the website
 
 
-##What is module?
+## What is module?
 A module is a collection of components, services, pips and directives.
 
-##Events In Angular
-###1 keyup ==> To Perform action whenver a Key is pressed
-###2 keyup.enter ==> To Perform action whenver a Enter Key is pressed
-###3 keyup.space ==> To Perform action whenver a Space Key is pressed 
-###4 keydown ==> To Perform action whenver a Key is released
-###4 keydown.enter ==> To Perform action whenver a Enter Key is released
-###5 keydown.space ==> To Perform action whenver a Space Key is released
-###6 blur ==> To Perform action whenver a When focus out a TextField
-###7 mouseover ==> To Perform action Whenever hover the mouse
-###8 mouseleave ==> To Perform action Whenever move out the mouse
+## Events In Angular
+### 1 keyup ==> To Perform action whenver a Key is pressed
+### 2 keyup.enter ==> To Perform action whenver a Enter Key is pressed
+### 3 keyup.space ==> To Perform action whenver a Space Key is pressed 
+### 4 keydown ==> To Perform action whenver a Key is released
+### 4 keydown.enter ==> To Perform action whenver a Enter Key is released
+### 5 keydown.space ==> To Perform action whenver a Space Key is released
+### 6 blur ==> To Perform action whenver a When focus out a TextField
+### 7 mouseover ==> To Perform action Whenever hover the mouse
+### 8 mouseleave ==> To Perform action Whenever move out the mouse
 
 # Blog
 
