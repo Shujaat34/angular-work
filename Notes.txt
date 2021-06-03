@@ -1,0 +1,38 @@
+Commands
+
+ng new myproject ==> To create Angular project
+
+ng g c mycomp ==> To create component in angular
+
+ng g m mymodule ==> To create a module
+---------------------------------------------
+We can't do in Angular
+
+{{a=10}} ==> can't do assignment 
+{{window.location.href}} ==> can't get url directly in html
+
+
+What is component?
+
+It is a piece of code which is reusable like we make a component for registration, a component for login
+a component for list rendering.
+A component is same as a function which is reusable. 
+A componet has four files 1)compoenet.ts, 2)component.html, 3) component.css, 4) component.spec.ts (for testing)
+
+Example : We make a header component and a fotter component which we use through out the website
+
+
+What is module?
+A module is a collection of components, services, pips and directives.
+
+Events in Angular
+
+
+
+
+
+
+
+
+
+
