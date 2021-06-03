@@ -1,4 +1,4 @@
-# AngularCommands
+# Angular Basic Commands
 
 ng new myproject ==> To create Angular project
 
