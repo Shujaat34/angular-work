@@ -1,10 +1,15 @@
-<h1>Get TextField value in Angular</h1>
-<!-- Getting a value as we press the Key -->
-<p>Enter value </p><input type="text" #box (keyup)="getValueOnTextBox(box.value)"> 
-<h3>{{val1}}</h3>
+<h1>Property Binding in Angular</h1>
+<!-- Binding a value by property binding-->
 
-<!-- Getting  a value as we click the button -->
+<!-- The name is described in typescript file as a variable -->
+<!-- It is better to use property binding for taking values from typescript -->
+<input type="text" [disabled]="disabledBox" [value]="name"><br><br> 
 
-<p>Enter value </p><input type="text" #box1>
-<button (click)="getValueOnButtonClick(box1.value)">Click here</button>
-<h3>{{val2}}</h3>
+
+<!-- Binding  a value by interpolation -->
+<input type="text" disabled="{{disabledBox}}" value="{{name}}"><br><br>
+
+
+<button (click)="enableTextbox()">Enable TextBox</button>
+&nbsp; &nbsp;
+<button (click)="disableBox(true)">Disable TextBox</button>
