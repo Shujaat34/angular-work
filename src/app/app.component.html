@@ -1,15 +1,41 @@
-<h1>Property Binding in Angular</h1>
-<!-- Binding a value by property binding-->
+<h1>If Conditions in Angular</h1>
+<h1 *ngIf="show else elseblock">
+  If Block 1
+</h1>
 
-<!-- The name is described in typescript file as a variable -->
-<!-- It is better to use property binding for taking values from typescript -->
-<input type="text" [disabled]="disabledBox" [value]="name"><br><br> 
+<!-- ng-template is visible when a particular condition is true like we can run it as else block-->
+<ng-template #elseblock>
+  <h1>else Block 1</h1>
+</ng-template>
+
+<!-- taking string and comparing whether it is true or false -->
+<h1 *ngIf="check=='yes' else elseblock1">
+  If Block 2
+</h1>
+
+<!-- ng-template is visible when a particular condition is true -->
+<ng-template #elseblock1>
+  <h1>else Block 2</h1>
+</ng-template>
 
 
-<!-- Binding  a value by interpolation -->
-<input type="text" disabled="{{disabledBox}}" value="{{name}}"><br><br>
+<h2 *ngIf="name=='aslam' then ifblock else elsBlock">if block 3</h2>
+<ng-template #ifblock>
+  <h3>If block 3</h3>
+</ng-template>
 
+<ng-template #elsBlock>
+  <h3>else block 3</h3>
+</ng-template>
 
-<button (click)="enableTextbox()">Enable TextBox</button>
-&nbsp; &nbsp;
-<button (click)="disableBox(true)">Disable TextBox</button>
+<!-- Using all indepent ifs -->
+
+<ng-template [ngIf]="color=='green'">
+    <h1>Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color=='red'">
+  <h1>Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+  <h1>Blue Color</h1>
+</ng-template>

@@ -8,15 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Blog';
-  name = "Bukhari";
+  show = false;
 
-  disabledBox = true;
+  check = 'yes';
 
-  enableTextbox(){
-    this.disabledBox = false;
-  }
+  name = 'aslam';
 
-  disableBox(val : boolean){
-    this.disabledBox = val;
-  }
+  color = 'green';
 }
