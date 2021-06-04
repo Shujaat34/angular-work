@@ -1,12 +1,10 @@
-<h1>Switch Case in Angular</h1>
-<div [ngSwitch]="color">
-  <h1 *ngSwitchCase="'red'">
-      Red Color 
-  </h1>
-  <h1 *ngSwitchCase="'green'">
-      Green Color 
-  </h1>
-  <h1 *ngSwitchCase="'blue'">
-    Blue Color 
-  </h1>
-</div>
+<h2>For Loop in Angular</h2>
+
+<h4 *ngFor="let item of colorArray">
+{{item}}
+</h4>
+<h2>Printing Object Array</h2>
+<h4 *ngFor="let p of persons">
+  {{p.name}}
+  {{p.age}}
+</h4>
