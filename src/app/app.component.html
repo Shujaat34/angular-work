@@ -1,10 +1,11 @@
-<h2>For Loop in Angular</h2>
+<h2>Simple Forms in Angular</h2>
 
-<h4 *ngFor="let item of colorArray">
-{{item}}
-</h4>
-<h2>Printing Object Array</h2>
-<h4 *ngFor="let p of persons">
-  {{p.name}}
-  {{p.age}}
-</h4>
+<form action="" #simpleForm="ngForm" (ngSubmit)="getUserDetails(simpleForm.value)">
+  <input type="text" ngModel name="username" placeholder="Username"><br><br>
+  <input type="text" ngModel name="age" placeholder="Age"><br><br>
+  <input type="text" ngModel name="email" placeholder="Email"><br><br>
+  <input type="password" ngModel name="password" placeholder="password"><br><br>
+
+  <button> Get Values </button>
+
+</form>

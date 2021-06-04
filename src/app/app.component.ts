@@ -8,21 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Blog';
-  colorArray = ['blue','green','yellow','orange','black'];
-
-  persons = [
-    {
-      name:'Bukhari',
-      age: 20
-    },{
-      name:'John',
-      age: 22
-    },{
-      name:'Saleem',
-      age: 33
-    },{
-      name:'Rose',
-      age: 21
-    },
-  ]
+  getUserDetails(values:string) {
+    console.log(values)
+  }
 }
