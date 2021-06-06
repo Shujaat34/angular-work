@@ -5,6 +5,8 @@ ng new myproject ==> To create Angular project
 ng g c mycomp ==> To create component in angular
 
 ng g m mymodule ==> To create a module
+
+ng add @ng-bootstrap/ng-bootstrap ==> To add Bootstrap in to your Project
 ---------------------------------------------
 We can't do in Angular
 
