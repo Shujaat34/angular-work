@@ -1,11 +1,16 @@
-<h2>Simple Forms in Angular</h2>
+<h1>Style binding in Angular</h1>
+<!-- Style binding as a string -->
+<h3 [style.color]="'blue'">Bukhari </h3>
 
-<form action="" #simpleForm="ngForm" (ngSubmit)="getUserDetails(simpleForm.value)">
-  <input type="text" ngModel name="username" placeholder="Username"><br><br>
-  <input type="text" ngModel name="age" placeholder="Age"><br><br>
-  <input type="text" ngModel name="email" placeholder="Email"><br><br>
-  <input type="password" ngModel name="password" placeholder="password"><br><br>
+<h3 [style.backgroundColor]="'skyblue'">Bukhari </h3>
+<!-- This is dynamic binding -->
+<h3 [style.backgroundColor]="mycolor" [style.color]="mytextColor" >Bukhari </h3>
 
-  <button> Get Values </button>
+<!-- Conditional Coloring -->
 
-</form>
+<h3 [style.color] = "err?'green':'green'">Conditional Coloring</h3>
+
+<button (click)="updateColor()">Click to do Blue</button>
+
+
+

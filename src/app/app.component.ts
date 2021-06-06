@@ -8,7 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Blog';
-  getUserDetails(values:string) {
-    console.log(values)
+  mycolor = 'purple';
+  mytextColor = 'white';
+
+  err = true;
+  updateColor(){
+    this.mycolor= 'blue';
   }
+
 }
