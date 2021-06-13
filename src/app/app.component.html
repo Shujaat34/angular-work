@@ -1,15 +1,5 @@
-<h1>Add Bootstrap in Angular 10</h1>
-
-<p>
-  <ngb-alert [dismissible]="true">
-    <strong>Warning!</strong> Better check yourself, you're not looking too good.
-  </ngb-alert>
-</p>
-
-
-<p *ngFor="let alert of alerts">
-  <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
-</p>
-<p>
-  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-</p>
+<h1>Add Material in Angular 10</h1>
+<button mat-button color="primary">Primary</button>
+<button mat-button color="accent">Accent</button>
+<button mat-button color="warn">Warn</button>
+<button mat-button disabled>Disabled</button>
