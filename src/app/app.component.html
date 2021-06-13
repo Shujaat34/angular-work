@@ -1,16 +1,15 @@
-<h1>Style binding in Angular</h1>
-<!-- Style binding as a string -->
-<h3 [style.color]="'blue'">Bukhari </h3>
+<h1>Add Bootstrap in Angular 10</h1>
 
-<h3 [style.backgroundColor]="'skyblue'">Bukhari </h3>
-<!-- This is dynamic binding -->
-<h3 [style.backgroundColor]="mycolor" [style.color]="mytextColor" >Bukhari </h3>
-
-<!-- Conditional Coloring -->
-
-<h3 [style.color] = "err?'green':'green'">Conditional Coloring</h3>
-
-<button (click)="updateColor()">Click to do Blue</button>
+<p>
+  <ngb-alert [dismissible]="true">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
 
 
-
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+</p>
